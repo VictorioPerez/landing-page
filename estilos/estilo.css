@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+/* Paleta de colores */
+:root{
+    /* Header */
+    --headerBC:#FCF7F8;
+    /* Section */
+    --sectionBG: #275DAD;
+}
+li{
+    list-style-type: none;
+}
+
+/* --------------------------------------------------*/
+header{
+    background-color: var(--headerBC);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.logoPagina{
+    width: 70px;
+}
+.navbar{
+    gap: 80px;
+}
+.ulNavbar{
+gap: 30px;
+}
+.navbar,.ulNavbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left:30px;
+    padding-right:30px;
+}
+.liNavbar,.aLiNavbar{
+    text-decoration: none;
+    color: black;
+}
