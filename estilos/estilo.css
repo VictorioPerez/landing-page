@@ -53,6 +53,12 @@ gap: 30px;
     text-decoration: none;
     color: black;
 }
+.menuLabel{
+    display: none;
+}
+#menu-toggle{
+    display: none;
+}
 /* --------------------SECTION SOBRE MI------------------------------*/
 .fotoAvatar{
     width: 320px;
@@ -104,8 +110,71 @@ margin-top: 70px;
 padding-bottom: 20px;
 }
 .sectionInformationPersonal p{
-    padding: 0px 80px;
+    padding: 10px 80px;
 }
 .sectionInformationPersonal h2::first-letter{
     color: #275DAD;
+}
+
+
+/* RESPONSIVE MOBILE */
+@media(max-width:475px){
+    .navbar{
+        z-index: 3;
+    }
+    .iconMenu{
+        width: 100px;
+        background-color: var(--headerBC);
+    }
+    .ulNavbar{
+        flex-direction: column;
+        position: absolute;
+        top: 65px;
+        right: 0px;
+        background-color: var(--sectionBG);
+        border: 1px solid black;
+        border-top: 0px;
+        z-index: 2;
+        padding: 30px 169px;
+        display: none;
+    }
+     #menu-toggle{
+        display: none;
+    }
+    .iconMenu{
+        width: 50px;
+        cursor: pointer;
+    }
+    .sectionSobreMi{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .menuLabel{
+        display: flex;
+    }
+    #menu-toggle:checked + .ulNavbar{
+        display: flex;
+    }
+
+    .sectionSobreMi{
+        margin-top: 5px;
+    }
+    .containerSobreMi p{
+      padding: 2px 0px;
+      width: 285px;
+      position: relative;
+      right: 30px;
+    }
+    .fotoAvatar{
+        position: relative;
+        right: -49px;
+        top: 76px;
+    }
+    .containerButtons{
+        display: flex;
+        flex-direction: column;
+    }
+    .sectionInformationPersonal p{
+        padding: 15px 45px;
+    }
 }
