@@ -12,13 +12,16 @@
     /* Header */
     --headerBC:#FCF7F8;
     /* Section */
-    --sectionBG: #275DAD;
+    --sectionBG: #CED3DC;
 }
 li{
     list-style-type: none;
 }
+section{
+    background-color: var(--sectionBG);
+}
 
-/* --------------------------------------------------*/
+/* --------------------HEADER------------------------------*/
 header{
     background-color: var(--headerBC);
     width: 100%;
@@ -49,4 +52,60 @@ gap: 30px;
 .liNavbar,.aLiNavbar{
     text-decoration: none;
     color: black;
+}
+/* --------------------SECTION SOBRE MI------------------------------*/
+.fotoAvatar{
+    width: 320px;
+}
+.fotoAvatar{
+    position: relative;
+    right: 50px;
+    top: 70px;
+}
+.containerImg{
+    padding: 0px,250px;
+}
+.sectionSobreMi{
+display: flex;
+flex-direction: row;
+margin-top: 70px;
+}
+.containerSobreMi{
+    margin:100px 100px;
+}
+.containerSobreMi h2, .containerSobreMi p{
+    text-align: center;
+    line-height: 25px;
+}
+.containerSobreMi h2{
+    color: #275DAD;
+}
+.containerSobreMi p{
+    padding: 10px 100px;
+}
+.containerButtons{
+ display: flex;
+ justify-content: center;
+ gap: 25px;
+ margin-top: 10px;
+}
+.containerButtons button{
+    padding: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    background-color: #FCF7F8;
+    color: #275DAD;
+}
+/* --------------------SECTION INFO PERSONAL------------------------------*/
+.sectionInformationPersonal h2,.sectionInformationPersonal p{
+    text-align: center;
+}
+.sectionInformationPersonal h2{
+padding-bottom: 20px;
+}
+.sectionInformationPersonal p{
+    padding: 0px 80px;
+}
+.sectionInformationPersonal h2::first-letter{
+    color: #275DAD;
 }
