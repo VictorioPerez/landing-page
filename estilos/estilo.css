@@ -54,6 +54,10 @@ gap: 30px;
     text-decoration: none;
     color: black;
 }
+.aLiNavbar:hover{
+    color: #275DAD;
+    transition: all 0.3s linear;
+}
 .menuLabel{
     display: none;
 }
@@ -102,6 +106,14 @@ margin-top: 70px;
     border-radius: 15px;
     background-color: #FCF7F8;
     color: #275DAD;
+    cursor: pointer;
+    
+}
+.containerButtons button:hover{
+    background-color: #ABA9C3;
+    border: 1px solid #ABA9C3;
+    color: #FCF7F8;
+    transition: all 0.4s linear;
 }
 /* --------------------SECTION INFO PERSONAL------------------------------*/
 .sectionInformationPersonal h2,.sectionInformationPersonal p{
