@@ -13,6 +13,7 @@
     --headerBC:#FCF7F8;
     /* Section */
     --sectionBG: #CED3DC;
+    --footer: #4278c9;
 }
 li{
     list-style-type: none;
@@ -129,6 +130,173 @@ padding-bottom: 20px;
     color: #275DAD;
 }
 
+/* --------------------SECTION SKILLS------------------------------*/
+.sectionSkills{
+    padding-top: 80px;
+}
+.sectionSkills h2{
+    text-align: center;
+}
+.sectionSkills h2::first-letter{
+    color: #275DAD;
+}
+.containerSkills{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+}
+.containerSkills div{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    border: 1px solid #ABA9C3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s;
+}
+.containerSkills span{
+    display: none;
+}
+
+.containerSkills div:hover span{
+    transform: scale(1.1);
+    display: block;
+    position: absolute;
+    backdrop-filter: blur(5px);
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    padding-top: 50px;
+    color: black;
+}
+.containerSkills .divHTML:hover{
+    border:  1px solid #FF651E;
+    box-shadow: #FF651E 0px 3px 20px;
+}
+.containerSkills .divCSS:hover{
+    border:  1px solid #0065F4;
+    box-shadow: #0065F4 0px 3px 20px;
+}
+.containerSkills .divJS:hover{
+    border:  1px solid #FFDF00;
+    box-shadow: #FFDF00 0px 3px 20px;
+}
+.containerSkills .divSQL:hover{
+    border:  1px solid #FFDF00;
+    box-shadow: #FFDF00 0px 3px 20px;
+}
+.containerSkills .divSQL:hover{
+    border:  1px solid #CF7A74;
+    box-shadow: #CF7A74 0px 3px 20px;
+}
+.containerSkills .divC:hover{
+    border:  1px solid #782379;
+    box-shadow: #782379 0px 3px 20px;
+}
+.containerSkills div img{
+    width: 130px;
+    height: 130px;
+}
+.containerSkills div:nth-child(even){
+    margin: 0px 50px;
+}
+
+/* --------------------SECTION CONTACTO------------------------------*/
+textarea{
+    resize: none;
+}
+.sectionContact{
+    padding: 50px 0px 50px 0px;
+}
+.sectionContact h2{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.sectionContact h2::first-letter{
+    color: #275DAD;
+}
+.containerContact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 30px;
+}
+.infoContact{
+    padding-top: 30px;
+}
+.infoContact div:nth-child(even){
+    margin: 10px 0px;
+}
+.infoContact div{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.infoContact h4{
+    text-align: justify;
+}
+.formContact input{
+    border-radius: 5px;
+    border: 1px solid #ABA9C3;
+    width: 250px;
+    height: 30px;
+}
+.formContact form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.formContact button{
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    background-color: #FCF7F8;
+    color: #275DAD;
+    cursor: pointer;
+    width: auto;
+    height: 30px;
+}
+.formContact button:hover{
+    background-color: #ABA9C3;
+    border: 1px solid #ABA9C3;
+    color: #FCF7F8;
+    transition: all 0.4s linear;
+}
+/* --------------------FOOTER------------------------------*/
+footer{
+    background-color: var(--footer);
+    height: auto;
+}
+footer h4{
+    text-align: center;
+    padding-top: 30px;
+}
+.socialMedia{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    
+}
+.socialMedia img{
+    width: 30px;
+}
+.socialMedia a:nth-child(even){
+    margin: 0px 40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* RESPONSIVE MOBILE */
 @media(max-width:475px){
@@ -190,5 +358,21 @@ padding-bottom: 20px;
     }
     .sectionInformationPersonal p{
         padding: 15px 45px;
+    }
+    .containerSkills{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .containerContact{
+        display: flex;
+        flex-direction: column;
+    }
+    .infoContact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 10px;
     }
 }

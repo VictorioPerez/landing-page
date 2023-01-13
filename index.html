@@ -1,79 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Victorio Perez | Portfolio</title>
-    <link rel="stylesheet" href="estilos/estilo.css" />
-  </head>
 
-  <body>
-    <!-- HEADER PORTFOLIO -->
-    <header>
-      <img
-        src="img/c87932b7cbc24abc8893bb3e94dbf908.png"
-        alt="Logo portfolio"
-        class="logoPagina"
-      />
-      <nav class="navbar">
-        <!-- Label con la img del menu adentro del input, lo linkeamos entre si -->
-        <label for="menu-toggle" class="menuLabel">
-          <img src="img/menuHamburguesa.svg" alt="icon menu" class="iconMenu"/>
-        </label>
-        <input type="checkbox" id="menu-toggle"/>
-        <ul class="ulNavbar">
-          <li class="liNavbar"><a href="#" class="aLiNavbar">Inicio</a></li>
-          <li class="liNavbar"><a href="#" class="aLiNavbar">Sobre mi</a></li>
-          <li class="liNavbar"><a href="#" class="aLiNavbar">Skills</a></li>
-          <li class="liNavbar"><a href="#" class="aLiNavbar">Proyectos</a></li>
-          <li class="liNavbar"><a href="#" class="aLiNavbar">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
-    <section class="sectionSobreMi">
-      <div class="containerSobreMi">
-        <h2>Sobre mi</h2>
-        <p>
-          Me llamo Victorio Perez, tengo 21 años. Actualmente me dedico al
-          aprendizaje para ser Desarrollador Web Full Stack en NUCBA, tambien
-          estudio la carrera Tecnicatura Univeristaria en Programación en la
-          <strong>Universidad Tecnologica Nacional</strong> de Córdoba. Tengo
-          interes en seguir aprendiendo nuevas tecnologias ya que es algo que me
-          apasiona desde chico.
-          <!-- TEXTO DE RELLENO  -->
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
-          blanditiis provident vero nam ut odit nihil quisquam corporis, laborum
-          mollitia incidunt totam fuga quos maiores vel quo, tempora cupiditate
-          sit.
-        </p>
-        <div class="containerButtons">
-          <button>CV</button>
-          <button>LinkedIn</button>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Victorio Perez | Portfolio</title>
+  <link rel="stylesheet" href="estilos/estilo.css" />
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/e43627a66a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- HEADER PORTFOLIO -->
+  <header>
+    <img src="img/c87932b7cbc24abc8893bb3e94dbf908.png" alt="Logo portfolio" class="logoPagina" />
+    <nav class="navbar">
+      <!-- Label con la img del menu adentro del input, lo linkeamos entre si -->
+      <label for="menu-toggle" class="menuLabel">
+        <img src="img/menuHamburguesa.svg" alt="icon menu" class="iconMenu" />
+      </label>
+      <input type="checkbox" id="menu-toggle" />
+      <ul class="ulNavbar">
+        <li class="liNavbar"><a href="#sobreMi" class="aLiNavbar">Sobre mi</a></li>
+        <li class="liNavbar"><a href="#skills" class="aLiNavbar">Skills</a></li>
+        <li class="liNavbar"><a href="#" class="aLiNavbar">Proyectos</a></li>
+        <li class="liNavbar"><a href="#contacto" class="aLiNavbar">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="sectionSobreMi" id="sobreMi">
+    <div class="containerSobreMi">
+      <h2>Sobre mi</h2>
+      <p>
+        Me llamo Victorio Perez, tengo 21 años. Actualmente me dedico al
+        aprendizaje para ser Desarrollador Web Full Stack en NUCBA, tambien
+        estudio la carrera Tecnicatura Univeristaria en Programación en la
+        <strong>Universidad Tecnologica Nacional</strong> de Córdoba. Tengo
+        interes en seguir aprendiendo nuevas tecnologias ya que es algo que me
+        apasiona desde chico.
+        <!-- TEXTO DE RELLENO  -->
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
+        blanditiis provident vero nam ut odit nihil quisquam corporis, laborum
+        mollitia incidunt totam fuga quos maiores vel quo, tempora cupiditate
+        sit.
+      </p>
+      <div class="containerButtons">
+        <button>CV</button>
+        <button>LinkedIn</button>
+      </div>
+    </div>
+    <div class="containerImg">
+      <img src="img/undraw_male_avatar_re_nyu5.svg" alt="foto avatar" class="fotoAvatar" />
+    </div>
+  </section>
+  <section class="sectionInformationPersonal">
+    <h2>Hobbies</h2>
+    <p>
+      Así como tengo pasión por la tecnologia y aprender de ella también
+      disfruto mucho de escuchar todo tipo de musica, tanto para estudiar como
+      para cualquier otra actividad que realice. Otros de mis gustos mas
+      grandes son los videojuegos que gracias a ellos inicié en este mundo por
+      la curiosidad.
+      <!-- TEXTO DE RELLENO -->
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+      labore reiciendis molestias cumque quas nesciun t, vitae ex saepe unde
+      ipsam dolorum exercitationem qui dolore rem, incidunt fuga quam tenetur
+      animi?
+    </p>
+  </section>
+  <section class="sectionSkills" id="skills">
+    <h2>Skills</h2>
+    <div class="containerSkills">
+      <div class="divHTML"><img src="img/html-5.png" alt="icon HTML">
+      <span>Nivel: Avanzado</span></div>
+      <div class="divCSS"><img src="img/css-3.png" alt="icon CSS"><span>Nivel: Intermedio</span></div>
+      <div class="divJS"><img src="img/js.png" alt="icon JS"><span>Nivel: Basico</span></div>
+      <div class="divSQL"><img src="img/sql-server.png" alt="icon SQL Server"><span>Nivel: Avanzado</span></div>
+      <div class="divC"><img src="img/c-sharp.png" alt="icon C#"><span>Nivel: Intermedio</span></div>
+    </div>
+  </section>
+  <!-- <section class="sectionProyects">
+  </section> -->
+  <section class="sectionContact" id="contacto">
+    <h2>Contacto</h2>
+    <div class="containerContact">
+      <div class="infoContact">
+        <div>
+          <h3><i class="fa-solid fa-user"></i> Nombre:</h3>
+          <h3>Victorio Perez</h3>
+        </div>
+        <div>
+          <h3><i class="fa-solid fa-location-dot"></i> Dirección:</h3>
+          <h3>Córdoba, Argentina</h3>
+        </div>
+        <div>
+          <h3><i class="fa-solid fa-envelope"></i> Mail:</h3>
+          <h3>vic.perez2682@gmail.com</h3>
         </div>
       </div>
-      <div class="containerImg">
-        <img
-          src="img/undraw_male_avatar_re_nyu5.svg"
-          alt="foto avatar"
-          class="fotoAvatar"
-        />
+      <div class="formContact">
+        <form>
+          <label for="Nombre">Nombre:</label>
+          <input type="text" placeholder="su nombre" id="Nombre">
+          <label for="Mail">Correo electronico:</label>
+          <input type="email" name="Mail" id="Mail" placeholder="ejemplo@gmail.com">
+          <label for="Consulta">Consulta:</label>
+          <textarea id="Consulta" cols="10" rows="5"></textarea>
+          <button>Enviar</button>
       </div>
-    </section>
-    <section class="sectionInformationPersonal">
-      <h2>Hobbies</h2>
-      <p>
-        Así como tengo pasión por la tecnologia y aprender de ella también
-        disfruto mucho de escuchar todo tipo de musica, tanto para estudiar como
-        para cualquier otra actividad que realice. Otros de mis gustos mas
-        grandes son los videojuegos que gracias a ellos inicié en este mundo por
-        la curiosidad.
-        <!-- TEXTO DE RELLENO -->
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-        labore reiciendis molestias cumque quas nesciun t, vitae ex saepe unde
-        ipsam dolorum exercitationem qui dolore rem, incidunt fuga quam tenetur
-        animi?
-      </p>
-    </section>
-  </body>
+    </div>
+  </section>
+  <footer>
+    <h4>Creado por Victorio Perez | Todos los derechos reservados </h4>
+    <div class="socialMedia">
+      <a href="#" target="_blank">
+        <img src="img/square-facebook.svg" alt="facebook icon">
+      </a>
+      <a href="#" target="_blank">
+        <img src="img/square-twitter.svg" alt="Twitter icon">
+      </a>
+      <a href="#" target="_blank">
+        <img src="img/instagram.svg" alt="instagram icon">
+      </a>
+    </div>
+  </footer>
+</body>
+
 </html>
